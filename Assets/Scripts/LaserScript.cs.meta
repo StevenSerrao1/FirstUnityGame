@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 32a93a6fc11ff6341b284062398eff87
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _laser: {fileID: 4305812543050623087, guid: cd7100dbb4612aa468ff336c32144052, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
