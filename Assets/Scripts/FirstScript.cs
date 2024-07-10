@@ -12,12 +12,13 @@ public class FirstScript : MonoBehaviour
     [SerializeField] private float _fireRate = 0.13f;
     [SerializeField] private float _canFire = -1.0f;
     [SerializeField] private int _lives = 3;
-    
-    
+    [SerializeField] private SpawnManager _spawnManager;
+
+
     // Start is called before the first frame update
     void Start()
     {
-
+        _spawnManager = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
         // Take the current position and initiate it at (0, 0, 0)
         transform.position = new Vector3(0, 0, 0);
 
@@ -76,6 +77,7 @@ public class FirstScript : MonoBehaviour
         this._lives--;
         if (this._lives < 1)
         {
+            _spawnManager.OnPlayerDeath();
             Destroy(this.gameObject);
         }
     }

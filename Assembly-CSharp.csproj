@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\LaserScript.cs" />
     <Compile Include="Assets\Scripts\SecondScript.cs" />
     <Compile Include="Assets\Scripts\FirstScript.cs" />
+    <Compile Include="Assets\Scripts\SpawnManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
